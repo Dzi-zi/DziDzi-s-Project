@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"      content="IE=edge">
+    <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+    <meta name="author"                     content="Dzifa Matrevi Adzoa">
+    <meta name="keywords"                   content="Website + Work + Search">
+    <meta name="description"                content="Website that finds work">
+
+    <!---Linking External Css File-->
+    <link rel="stylesheet" href="./Css/style2.css" type="text/css">
+
+    <!--Linking Font Awesome css files-->
+    <link href="Fonts/css/all.css" rel="stylesheet"  type="text/css">
+
+     <!--Linking webpage icon-->
+     <link href="Images/Work icon.jpg" rel="icon">
+    
+    <title>WorkAgent</title>
+</head>
+<body>
+
+    <!--Creating a Navigation Bar-->
+<nav>
+    <div class="logo">
+        <span>WorkAgent</span>
+    </div>
+
+    <ul>
+        <li><a href="index.html">ALL JOBS</a></li>
+        <li id="active"><a href="apply.html">APPLY</a></li>
+        <li><a href="reviews.html">REVIEWS</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+    </ul>
+</nav>
+
+<section class="container">
+     <header>Application Form</header>
+     <form action="#" class="form">
+        <div class="input-box">
+            <label>First Name</label>
+            <input type="text" placeholder="Enter first name" required>
+        </div>
+
+        <div class="input-box">
+            <label>Last Name</label>
+            <input type="text" placeholder="Enter last name" required>
+        </div>
+
+        <div class="input-box">
+            <label>Middle Name</label>
+            <input type="text" placeholder="Enter Middle name" required>
+        </div>
+
+        <div class="input-box">
+            <label>Email Address</label>
+            <input type="text" placeholder="IPMC@gmail.com" required>
+        </div>
+
+        <div class="column">
+        <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" required>
+        </div>
+
+
+        <div class="input-box">
+            <label>Birthdate</label>
+            <input type="date" placeholder="Enter Birthdate" required>
+        </div>
+    </div>
+
+    <div class="gender-box">
+        <h3>Gender</h3>
+        <div class="gender-option">
+           <div class="gender">
+              <input type="radio" id="check" name="gender">
+              <label for="check">Male</label>
+           </div>
+
+           <div class="gender">
+            <input type="radio" id="check-female" name="gender" checked>
+            <label for="check-female">Female</label>
+         </div>
+
+         <div class="gender">
+            <input type="radio" id="check-other" name="gender">
+            <label for="check-other">Other</label>
+         </div>
+        </div>
+    </div>
+
+    <div class="input-box address">
+        <label>Address</label>
+        <input type="text" placeholder="4176 Shiashie Street" required>
+        <input type="text" placeholder="Enter 2nd street address" required>
+        <div class="column">
+            <div class="select-box">
+                <select>
+                    <option hidden>Country</option>
+                    <option>Armenia</option>
+                    <option>Belgium</option>
+                    <option>China</option>
+                    <option>Denmark</option>
+                    <option>Egypt</option>
+                    <option>Ghana</option>
+                    <option>Holland</option>
+                    <option>India</option>
+                    <option>Japan</option>
+                    <option>Kenya</option>
+                    <option>Lebanon</option>
+                    <option>Malaysia</option>
+                    <option>New Zealand</option>
+                    <option>Oman</option>
+                    <option>Poland</option>
+                    <option>Qatar</option>
+                    <option>Russia</option>
+                    <option>Switzerland</option>
+                    <option>Tanzania</option>
+                    <option>Uganda</option>
+                    <option>Venezuela</option>
+                    <option>Wales</option>
+                    <option>Yemen</option>
+                    <option>Zambia</option>
+                </select>
+            </div>
+            <input type="text" placeholder="Accra" required>
+        </div>
+        
+        <div class="column">
+            <input type="text" placeholder="Enter your region" required>
+            <input type="number" placeholder="Enter Postal code" required>
+        </div>
+    </div>
+
+    <button>Submit</button>
+
+     </form>
+</section>
+    
+</body>
+</html>
