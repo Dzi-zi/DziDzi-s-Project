@@ -1,0 +1,86 @@
+   <div class="hidden">
+            <button
+              id="menu-toggle"
+              class=" button"
+              onclick="toggleSidebar()"
+
+            >
+              <svg
+                id="menu-icon"
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+              <svg
+                id="close-icon"
+                class="w-6 h-6 hidden"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+
+
+          //CSS
+          .hidden {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+
+@media
+ .hidden {
+    display: inline-block;
+    position: absolute;
+  }
+
+  /* Hide the menu icon when it's hidden */
+  #menu-icon.hidden {
+    display: none;
+  }
+
+  #close-icon {
+    display: none;
+  }
+
+  /* Show the close icon when it's not hidden */
+  #close-icon:not(.hidden) {
+    display: block;
+    
+  }
+
+  //script
+  function toggleSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  sidebar.classList.toggle("show");
+  menuIcon.classList.toggle("hidden");
+  closeIcon.classList.toggle("hidden");
+}
