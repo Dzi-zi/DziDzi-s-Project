@@ -301,6 +301,7 @@ button {
     border-radius: 0.5rem;
     border: 0.1rem solid rgba(0,0,0,0.1);
     position: relative;
+
 }
 
 .index .box-container .box .Occupation{
@@ -314,7 +315,7 @@ button {
     text-transform: uppercase;
     font-weight: bolder;
     color: darkgoldenrod;
-    background: rgba(255, 51, 153, 0.05);
+    background: #d5d3d3;
     z-index: 1;
     border-radius: 0.5rem;
 }
@@ -515,6 +516,9 @@ button {
     border-radius: 0.5rem;
     padding: 3rem 2rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .reviews .box-container .box .fa-quote-right{
@@ -775,7 +779,7 @@ button {
         position: absolute;
           left: 0;
           height: 100vh;
-          background-color: rgb(92, 92, 92);
+          background-color: rgb(0, 0, 0);
           top: 9rem;
           width: 40%;
     
