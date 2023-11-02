@@ -1,9 +1,4 @@
- /*
- :root{
-    --black: /* #e84393 */
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -13,6 +8,7 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.2s linear;
+    font-family: "Poppins", sans-serif;
 }
 
 html{
@@ -161,13 +157,15 @@ button {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url("../Images/WorkAgent2.jpg") no-repeat;
+    background:  url("../Images/WorkAgent2.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home .content{
     max-width: 50rem;
+   background:  linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1), black, transparent);
+   padding: 5px;
 }
 
 .home .content h1{
